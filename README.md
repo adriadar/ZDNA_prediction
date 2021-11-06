@@ -46,8 +46,11 @@ ENCFF159YHL - 30739 пиков
 
 #### Скриншоты из genome.ucsc.edu
 
-*Координаты:*
+*Координаты: chr7:128694716-128695330*
+![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/chr7.png)
 
+*Координаты: chr11:101980748-101981341*
+![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/chr11.png)
 
 ## Список всех команд для командной строки
 ```
