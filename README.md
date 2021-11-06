@@ -2,7 +2,7 @@
 
 ## Анализ пиков гистоновой метки H2AFZ
 
-Гистограмма длинн участков
+![Гистограмма длин участков для фыв](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/hist_len_asd.png)
 
 Гистограмма длинн после фильтрации
 
