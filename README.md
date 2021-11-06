@@ -8,6 +8,7 @@
 ENCFF446ASD - 62939 пиков
 
 ENCFF159YHL - 31150 пиков
+
 ![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/hist_len_asd.png)
 ![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/hist_len_yhl.png)
 
@@ -19,6 +20,7 @@ ENCFF159YHL - 31150 пиков
 ENCFF446ASD - 62860 пиков
 
 ENCFF159YHL - 30739 пиков
+
 ![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/hist_len_filt_asd.png)
 ![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/hist_len_filt_yhl.png)
 
@@ -40,27 +42,24 @@ ENCFF159YHL - 30739 пиков
 *Колличество пиков пересечений Z-DNA и гистоновой метки равно 2656*
 ![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/hist_intersect.png)
 
-скрины
+#### Скриншоты из genome.ucsc.edu
+
+*Координаты:*
+
 
 ## Список всех команд для командной строки
 ```
     zcat ENCFF159YHL.bed.gz | cut -f1-5 > H2AFZ_bone_marrow_ENCFF159YHL_hg19.bed
-
     zcat ENCFF446ASD.bed.gz | cut -f1-5 > H2AFZ_bone_marrow_ENCFF446ASD_hg19.bed
-
 
     cat  *_filtered.bed  |   sort -k1,1 -k2,2n   |   bedtools merge   >  H2AFZ_bone_marrow_hg19_filtered_merged.bed
 
-
     track visibility=dense name="ENCFF159YHL" description="H2AFZ_bone_marrow_ENCFF159YHL_hg19_filtered.bed"
     https://raw.githubusercontent.com/adriadar/hse21_H2AFZ_ZDNA_human/main/data/H2AFZ_bone_marrow_ENCFF159YHL_hg19_filtered.bed?token=AN743GR6LMAKGLDUFWIXBMTBQ3GEI
-    
     track visibility=dense name="ENCFF446ASD" description="H2AFZ_bone_marrow_ENCFF446ASD_hg19_filtered.bed"
     https://raw.githubusercontent.com/adriadar/hse21_H2AFZ_ZDNA_human/main/data/H2AFZ_bone_marrow_ENCFF446ASD_hg19_filtered.bed?token=AN743GRJ7YHPBYQ6X5LYK43BQ3GIA
-    
     track visibility=dense name="ChIP_merge" color=50,50,200 description="H2AFZ_bone_marrow_hg19_filtered_merged.bed"
     https://raw.githubusercontent.com/adriadar/hse21_H2AFZ_ZDNA_human/main/data/H2AFZ_bone_marrow_hg19_filtered_merged.bed?token=AN743GVV6Z23DB5U5HT2YULBQ3GK2
-    
     
     bedtools intersect -a H2AFZ_bone_marrow_ENCFF159YHL_hg19_filtered.bed -b 3utr.bed -c > ENCFF159YHL_3utr.bed
     bedtools intersect -a H2AFZ_bone_marrow_ENCFF159YHL_hg19_filtered.bed -b 5utr.bed -c > ENCFF159YHL_5utr.bed
