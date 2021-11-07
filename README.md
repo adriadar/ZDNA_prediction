@@ -52,6 +52,10 @@ ENCFF159YHL - 30739 пиков
 *Координаты: chr11:101980748-101981341*
 ![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/chr11.png)
 
+#### Go-анализ
+![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/go_res.png)
+![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/go_analysis.png)
+
 ## Список всех команд для командной строки
 ```
     zcat ENCFF159YHL.bed.gz | cut -f1-5 > H2AFZ_bone_marrow_ENCFF159YHL_hg19.bed
@@ -59,6 +63,7 @@ ENCFF159YHL - 30739 пиков
 
     cat  *_filtered.bed  |   sort -k1,1 -k2,2n   |   bedtools merge   >  H2AFZ_bone_marrow_hg19_filtered_merged.bed
 
+    Команды для genome browser:
     track visibility=dense name="ENCFF159YHL" description="H2AFZ_bone_marrow_ENCFF159YHL_hg19_filtered.bed"
     https://raw.githubusercontent.com/adriadar/hse21_H2AFZ_ZDNA_human/main/data/H2AFZ_bone_marrow_ENCFF159YHL_hg19_filtered.bed?token=AN743GR6LMAKGLDUFWIXBMTBQ3GEI
     track visibility=dense name="ENCFF446ASD" description="H2AFZ_bone_marrow_ENCFF446ASD_hg19_filtered.bed"
@@ -66,6 +71,7 @@ ENCFF159YHL - 30739 пиков
     track visibility=dense name="ChIP_merge" color=50,50,200 description="H2AFZ_bone_marrow_hg19_filtered_merged.bed"
     https://raw.githubusercontent.com/adriadar/hse21_H2AFZ_ZDNA_human/main/data/H2AFZ_bone_marrow_hg19_filtered_merged.bed?token=AN743GVV6Z23DB5U5HT2YULBQ3GK2
     
+    Проверяем расположение относительно ассоциированных генов:
     bedtools intersect -a H2AFZ_bone_marrow_ENCFF159YHL_hg19_filtered.bed -b 3utr.bed -c > ENCFF159YHL_3utr.bed
     bedtools intersect -a H2AFZ_bone_marrow_ENCFF159YHL_hg19_filtered.bed -b 5utr.bed -c > ENCFF159YHL_5utr.bed
     bedtools intersect -a H2AFZ_bone_marrow_ENCFF159YHL_hg19_filtered.bed -b codingExons.bed -c > ENCFF159YHL_codingExons.bed
@@ -88,7 +94,13 @@ ENCFF159YHL - 30739 пиков
     bedtools intersect -a DeepZ.bed -b introns.bed -c > DeepZ_introns.bed
     bedtools intersect -a DeepZ.bed -b promoters.bed -c > DeepZ_promoters.bed
     
+    Пересекаем метку и Z-DNA:
     bedtools intersect -a DeepZ.bed -b H2AFZ_bone_marrow_hg19_filtered_merged.bed > H2AFZ_bone_marrow_intersect_with_DeepZ.bed
     
+    Команды для genome browser:
+    track visibility=dense name="DeepZ" color=0,200,0 description="DeepZ"
+    https://raw.githubusercontent.com/adriadar/hse21_H2AFZ_ZDNA_human/main/data/DeepZ.bed?token=AN743GRKIDFVGSK5X3XEC73BQ7GA6
+    track visibility=dense name="intersect_with_DeepZ" color=200,0,0 description="H3K4me3_A549.intersect_with_DeepZ.bed"
+    https://raw.githubusercontent.com/adriadar/hse21_H2AFZ_ZDNA_human/main/data/H2AFZ_bone_marrow_intersect_with_DeepZ.bed?token=AN743GUOZ7LE46PXJXELG5TBQ7GFC
     
 ```
