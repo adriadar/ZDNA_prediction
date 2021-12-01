@@ -7,7 +7,7 @@
 
 ![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/hist_intersect.png)
 
-## Отчет по первому Дз
+## Отчет по ДЗ 1
 
 [Сессия в genome browser](https://genome.ucsc.edu/s/adriadar/hse21_H2AFZ_ZDNA_human)
 
