@@ -1,11 +1,19 @@
-# Отчет
+## ДЗ 2
+Как видно из графика ниже (из первого дз) в моем наборе данных нет пересечений длины 1000, поэтому взяла последовательности длины 200, так если взять больше, то получится очешь мало данных.
+![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/hist_intersect.png)
+
+[ноутбук с подготовкой и обработкой данных]()
+
+[ноубук с моделью]()
+
+## Отчет по первому Дз
 
 [Сессия в genome browser](https://genome.ucsc.edu/s/adriadar/hse21_H2AFZ_ZDNA_human)
 
 [ноутбук с кодом для почти всех заданий](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/scr/notebook.ipynb)
 
 [ChIPpeakAnno.R](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/scr/ChIPpeakAnno.R)
-## Анализ пиков гистоновой метки H2AFZ
+### Анализ пиков гистоновой метки H2AFZ
 
 #### Гистограммы длин участков до фильтрации
 *Колличество пиков:*
@@ -33,7 +41,7 @@ ENCFF159YHL - 30739 пиков
 ![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/asd_piechart.png)
 ![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/yhl_piechart.png)
 
-## Анализ Z-DNA
+### Анализ Z-DNA
 *Колличество пиков Z-DNA равно 19394*
 
 #### Гистограмма длин
@@ -59,7 +67,7 @@ ENCFF159YHL - 30739 пиков
 ![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/go_res.png)
 ![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/go_analysis.png)
 
-## Список всех команд для командной строки
+#### Список всех команд для командной строки
 ```
     zcat ENCFF159YHL.bed.gz | cut -f1-5 > H2AFZ_bone_marrow_ENCFF159YHL_hg19.bed
     zcat ENCFF446ASD.bed.gz | cut -f1-5 > H2AFZ_bone_marrow_ENCFF446ASD_hg19.bed
