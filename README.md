@@ -1,9 +1,11 @@
 ## ДЗ 2
-Как видно из графика ниже (из первого дз) в моем наборе данных нет пересечений длины 1000, поэтому взяла последовательности длины 200, так если взять больше, то получится очешь мало данных.
+Как видно из графика ниже (из первого дз) в моем наборе данных нет пересечений длины 1000, поэтому взяла последовательности длины 200.
 
-[Ноутбук с подготовкой и обработкой данных]()
+[Ноутбук с подготовкой и обработкой данных](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/scr/hw2_data_preparation.ipynb)
 
-[Ноубук с моделью]()
+Пример данных для обучения можно найти в файле [data_for_network](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/tree/main/data_for_network).
+
+[Ноубук с моделью](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/scr/hw2_network.ipynb)
 
 ![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/hist_intersect.png)
 
