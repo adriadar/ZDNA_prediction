@@ -1,4 +1,4 @@
-## ДЗ 2
+## Подготовка датасета и модель
 Как видно из графика ниже (из первого дз) в моем наборе данных нет пересечений длины 1000, поэтому взяла последовательности длины 200.
 
 [Ноутбук с подготовкой и обработкой данных](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/scr/hw2_data_preparation.ipynb)
@@ -9,7 +9,7 @@
 
 ![](https://github.com/adriadar/hse21_H2AFZ_ZDNA_human/blob/main/images/hist_intersect.png)
 
-## Отчет по ДЗ 1
+## Сбор данных и их обработка
 
 [Сессия в genome browser](https://genome.ucsc.edu/s/adriadar/hse21_H2AFZ_ZDNA_human)
 
